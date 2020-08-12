@@ -18,7 +18,7 @@ order: 1
 - [x] Cost Function
 - [ ] Gradient Descent
 
-
+---
 ### Representation Model
 
 > h : X → Y , so that h(x) is a “good” predictor for the corresponding value of y
@@ -41,15 +41,16 @@ min(θ_0,θ_1): J(θ_0,θ_1) <== to minimize **Cost Function**
 why 1/2?: as convenience for the computation of the gradient descent
 
 We can also plot function of the parameter θ_1 (y: J(θ_1), x: θ_1)
-
+---
 
 ### Gradient Descent
 
 we need to estimate the parameters in the hypothesis function.
 
+The gradient descent algorithm is:
 
+θ_j := θ_j − α * (∂/∂θ) *  J(θ_0,θ_1) (simultaneously!!)
 
-
-
+>A cost function is something we want to minimize. For example, our cost function might be the sum of squared errors over the training set. Gradient descent is a method for finding the minimum of a function of multiple variables. So we can use gradient descent as a tool to minimize our cost function.
 
 
