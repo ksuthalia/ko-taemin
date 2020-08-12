@@ -31,8 +31,8 @@ g(z) = 1 / (1 + e^-z)
 
 **h_θ(x) will give us the probability that our output is 1. => h_θ(x) = 0.7 gives us a probability of 70% that our output is 1**
 
-h_θ(x) = P(y = 1|x;θ ) = 1 - P(y = 0|x;θ)
-P(y = 1|x;θ ) + P(y = 0|x;θ) = 1
+h_θ(x) = P(y = 1 **|** x;θ ) = 1 - P(y = 0 **|** x;θ)
+P(y = 1 **|** x;θ ) + P(y = 0 **|** x;θ) = 1
 
 ### - Decision Boundary
 
