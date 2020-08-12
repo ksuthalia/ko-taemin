@@ -41,6 +41,7 @@ min(θ_0,θ_1): J(θ_0,θ_1) <== to minimize **Cost Function**
 why 1/2?: as convenience for the computation of the gradient descent
 
 We can also plot function of the parameter θ_1 (y: J(θ_1), x: θ_1)
+
 ---
 
 ### Gradient Descent
@@ -51,6 +52,12 @@ The gradient descent algorithm is:
 
 θ_j := θ_j − α * (∂/∂θ) *  J(θ_0,θ_1) (simultaneously!!)
 
+**α:** If α is too small, gradint descent can be slow. If α is too big, gradient descent can overshoot the minimum. It may fail to converge, or even diverge.
+1. Gradient descent can converge to a local minimum, even with the learning rate α fixed
+2. As we approach a local minimum, gradient descent will automatically take smaller steps. So no need to decrease α over time.
+
 >A cost function is something we want to minimize. For example, our cost function might be the sum of squared errors over the training set. Gradient descent is a method for finding the minimum of a function of multiple variables. So we can use gradient descent as a tool to minimize our cost function.
+
+
 
 
