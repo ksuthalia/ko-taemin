@@ -14,7 +14,7 @@ Logistic Regression
 
 The classification problem is just like the regression problem, except that the values we now want to predict take on only small number of discrete values.
 
-The binart classification problem in which y can take on only two values: 0 and 1
+The binary classification problem in which y can take on only two values: 0 and 1
 
 
 ### - Hypothesis Representation
