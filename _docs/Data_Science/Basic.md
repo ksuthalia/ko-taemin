@@ -6,7 +6,7 @@ order: 1
 
 ## Supervised Learning
 
-- [x] Linear Regression
+- [x] Multivariate Linear Regression
 
 
 ## Umsupervised Learning
@@ -16,9 +16,10 @@ order: 1
 ## Basic
 
 - [x] Cost Function
-- [ ] Gradient Descent
+- [x] Gradient Descent
 
 ---
+
 ### Representation Model
 
 > h : X → Y , so that h(x) is a “good” predictor for the corresponding value of y
@@ -28,7 +29,7 @@ a list of m training examples (x^(i) ,y^(i)); i = 1, . . . , m
 
 (x^(i),y^(i));i=1,...,m  ==> is called a training set. 
 
-
+---
 
 ### Cost Function
 
@@ -57,6 +58,10 @@ The gradient descent algorithm is:
 2. As we approach a local minimum, gradient descent will automatically take smaller steps. So no need to decrease α over time.
 
 >A cost function is something we want to minimize. For example, our cost function might be the sum of squared errors over the training set. Gradient descent is a method for finding the minimum of a function of multiple variables. So we can use gradient descent as a tool to minimize our cost function.
+
+**Batch Gradient descent:** a method looks at every example in the entire training set on every step
+
+---
 
 
 
