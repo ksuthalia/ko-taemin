@@ -6,7 +6,7 @@ order: 1
 
 ## Supervised Learning
 
--[x] Linear Regression
+- [x] Linear Regression
 
 
 ## Umsupervised Learning
@@ -15,8 +15,8 @@ order: 1
 
 ## Basic
 
--[x] Cost Function
--[] Gradient Descent
+- [x] Cost Function
+- [ ] Gradient Descent
 
 
 ### Representation Model
