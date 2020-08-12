@@ -36,7 +36,7 @@ The goal is to get all input variables into roughly one of these ranges.
 
 - **Mean Normalization** involves subtracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just zere.
 
-**x_i := (x_i - u_i) / s_i (where s_i: (max-min or standard deviation)**
+**x_i := (x_i - u_i) / s_i (where s_i: max-min or standard deviation)**
 
 
 ### Polynominal Regression
