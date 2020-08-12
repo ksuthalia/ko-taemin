@@ -4,14 +4,22 @@ category: Basic
 order: 1
 ---
 
-> Supervised Learning
+## Supervised Learning
+
+-[x] Linear Regression
+
+
+## Umsupervised Learning
 
 
 
-> Umsupervised Learning
+## Basic
+
+-[x] Cost Function
+-[] Gradient Descent
 
 
-### Model
+### Representation Model
 
 > h : X → Y , so that h(x) is a “good” predictor for the corresponding value of y
 
@@ -22,7 +30,7 @@ a list of m training examples (x^(i) ,y^(i)); i = 1, . . . , m
 
 
 
-## Cost Function
+### Cost Function
 
 **Goal: choose θ_0 and θ_1 so that h_θ(x) is close to y for our training examples(x,y)**
 
@@ -31,5 +39,17 @@ a list of m training examples (x^(i) ,y^(i)); i = 1, . . . , m
 min(θ_0,θ_1): J(θ_0,θ_1) <== to minimize **Cost Function**
 
 why 1/2?: as convenience for the computation of the gradient descent
+
+We can also plot function of the parameter θ_1 (y: J(θ_1), x: θ_1)
+
+
+### Gradient Descent
+
+we need to estimate the parameters in the hypothesis function.
+
+
+
+
+
 
 
