@@ -11,9 +11,9 @@ Supervised Learning (Continuous Variable Prediction)
 h_θ(x) = θ_0 + (θ_1 * x_1) + ... + (θ_n * x_n)
 
 
-n | the number of features(j)
-m | the number of training examples(i)
-x_j^(i)| value of feature j in the i^th training example
+| n | the number of features(j) |
+| m | the number of training examples(i) |
+| x_j^(i)| value of feature j in the i^th training example |
 
 h_θ(x) = [ θ_0 θ_1 ... θ_n ] * [x_0 + x_1 + ... + x_n]^T = θ^T * x  (<= vectorized)
 
