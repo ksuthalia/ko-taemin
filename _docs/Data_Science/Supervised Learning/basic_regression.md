@@ -42,7 +42,8 @@ The goal is to get all input variables into roughly one of these ranges.
 ### Polynominal Regression
 
 h_θ(x) = θ_0 + (θ_1 * x_1) + (θ_2 * x_1^2) + (θ_3 * x_1^3)
-and we create: x_2 = x_1^2, x_3 = x_1^3
+
+we create: x_2 = x_1^2, x_3 = x_1^3
 
 
 
