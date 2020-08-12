@@ -4,23 +4,26 @@ category: Basic
 order: 1
 ---
 
-## Supervised Learning
+## - Supervised Learning
 
 - [x] Multivariate Linear Regression
 
 
-## Umsupervised Learning
+## - Umsupervised Learning
 
 
+## - Extra
+- [ ] Neural Network
 
-## Basic
+
+## - Basic
 
 - [x] Cost Function
 - [x] Gradient Descent
 
 ---
 
-### Representation Model
+### - Representation Model
 
 > h : X → Y , so that h(x) is a “good” predictor for the corresponding value of y
 
@@ -31,7 +34,7 @@ a list of m training examples (x^(i) ,y^(i)); i = 1, . . . , m
 
 ---
 
-### Cost Function
+### - Cost Function
 
 **Goal: choose θ_0 and θ_1 so that h_θ(x) is close to y for our training examples(x,y)**
 
@@ -45,10 +48,9 @@ We can also plot function of the parameter θ_1 (y: J(θ_1), x: θ_1)
 
 ---
 
-### Gradient Descent
+### - Gradient Descent
 
 we need to estimate the parameters in the hypothesis function.
-
 The gradient descent algorithm is:
 
 θ_j := θ_j − α * (∂/∂θ) *  J(θ_0,θ_1) (simultaneously!!)
