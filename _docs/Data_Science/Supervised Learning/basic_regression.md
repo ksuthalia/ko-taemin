@@ -5,12 +5,17 @@ order: 1
 ---
 
 Supervised Learning (Continuous Variable Prediction)
-> Basic Regression
 
-Basic Regression
+### Multivariate Linear Regression
 
-HELLO
+h_θ(x) = θ_0 + (θ_1 * x_1) + ... + (θ_n * x_n)
 
-1. Supervised *ww*
-2. Learning **??** 
+
+n | the number of features(j)
+m | the number of training examples(i)
+x_j^(i)| value of feature j in the i^th training example
+
+h_θ(x) = [ θ_0 θ_1 ... θ_n ] * [x_0 + x_1 + ... + x_n]^T = θ^T * x  (<= vectorized)
+
+for the convenience reasons we assume that x_0^(i) = 1
 
