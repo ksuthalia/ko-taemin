@@ -1,6 +1,6 @@
 ---
 title: AdaBoost
-category: Machine Learning
+category: Ensemble Methods
 order: 1
 ---
 
