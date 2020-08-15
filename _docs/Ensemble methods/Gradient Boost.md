@@ -4,7 +4,7 @@ category: Ensemble Methods
 order: 2
 ---
 
-Gradient Boost Part 1: Regression Main Ideas
+## Gradient Boost Part 1: Regression Main Ideas
 
 StatQuest: https://www.youtube.com/watch?v=3CC4N4z3GJc&t=44s
 
@@ -22,7 +22,7 @@ In practice, people often set the maximum number of leaves to be between 8 and 3
 
 **Pseudo Residual**: this term is for **Gradient Boost**. Residuel is from **Linear Regression**.
 
-> Residuel = Observed - Predicted
+> Pseudo Residual = (Observed - Predicted) ????
 
 We have to do a little math(compute:Pseudo Residual)
 
@@ -35,3 +35,48 @@ Empirical evidence shows that taking lots of small steps in the right direction 
 In practice, the trees can be different each time.
 
 ---
+
+## Gradient Boost Part 2: Regression Details
+
+#### it is mathematical but same as what we have done in part 1
+
+- **Loss Function(Cost Function)**
+
+We have a **differentiable Loss Function**.
+
+We are left with the **negative** Residual, and this make the math easier since **Gradient Boost** uses the derivative a lot.
+
+> 1/2 * (Observed - Predicted)^2 => derivative by predicted: -(Observed - Predicted)
+
+We just have figured out what the input is for the Gradient Boost algorithm.
+
+### Steps
+1. Initialize model with a constant value(with Loss Function and derivative)
+2. for m = 1 to M: step 2 is huge: watch Video! => M trees. most people set **M = 100**
+3. ...
+
+---
+
+## Gradient Boost Part 3: Classification
+
+https://www.youtube.com/watch?v=jxuNLH5dXCs
+
+When **Gradient Boost** is used for **Classification**, it has a lot in common with **Logistic Regression**.
+
+When we use **Gradient Boost for Classification**, the initial **Prediction** for every individual is the **log(odds)**. I like to think of the **log(odds)** as the **Logistic Regression** equivalent of the average.
+
+> Probability = e^log(x) / (1 + e^log(x) )
+
+**Threshold**
+
+## Gradient Boost Part 4: Classification Details
+
+https://www.youtube.com/watch?v=StWY5QWMXCw&t=20s
+
+
+
+
+
+
+
+
