@@ -73,6 +73,11 @@ When we use **Gradient Boost for Classification**, the initial **Prediction** fo
 
 https://www.youtube.com/watch?v=StWY5QWMXCw&t=20s
 
+The better the prediction, the larger the **log(likelihood)**, and this is why, when doing **Logistic Regression**, the goal is to maximaize the **log(likelihood)**.
+
+That means that if we want to use the **log(likelihood)** as a **Loss Function**, where smaller values represent better fitting models, then we need to multiply the **log(likelihood)** by **-1**.
+
+- negative log(likelihood)
 
 
 
