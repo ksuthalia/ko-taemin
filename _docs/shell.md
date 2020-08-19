@@ -17,3 +17,53 @@ The filesystem manages files and directories (or folders). Each is identified by
 
 To find out where you are in the filesystem, run the command pwd (short for "print working directory"). This prints the absolute path of your current working directory, which is where the shell runs commands and looks for files by default.
 
+**How can I identify files and directories?**
+pwd tells you where you are. To find out what's there, type ls (which is short for "listing") and press the enter key. On its own, **ls** lists the contents of your current directory (the one displayed by pwd). If you add the names of some files, ls will list them, and if you add the names of directories, it will list their contents. For example, ls /home/repl shows you what's in your starting directory (usually called your home directory).
+
+~~~
+$ pwd/home/repl
+$ lsbackup  bin  course.txt  people  seasonal
+$ cd /home/repl/seasonal
+$ pwd
+/home/repl/seasonal
+$ ls
+autumn.csv  spring.csv  summer.csv  winter.csv
+$
+~~~
+
+**How else can I identify files and directories?**
+An absolute path is like a latitude and longitude: it has the same value no matter where you are. A relative path, on the other hand, specifies a location starting from where you are: it's like saying "20 kilometers north".
+
+As examples:
+
+If you are in the directory /home/repl, the relative path seasonal specifies the same directory as the absolute path /home/repl/seasonal.
+If you are in the directory /home/repl/seasonal, the relative path winter.csv specifies the same file as the absolute path /home/repl/seasonal/winter.csv.
+The shell decides if a path is absolute or relative by looking at its first character: If it begins with /, it is absolute. If it does not begin with /, it is relative.
+
+You are in /home/repl. 
+~~~
+$ ls seasonal/summer.csv
+seasonal/summer.csv
+$ pwd
+/home/repl
+$ ls seasonal
+autumn.csv  spring.csv  summer.csv  winter.csv
+$ ls people
+agarwal.txt
+~~~
+
+**How can I move to another directory?**
+Just as you can move around in a file browser by double-clicking on folders, you can move around in the filesystem using the command cd (which stands for "change directory").
+
+If you type cd seasonal and then type pwd, the shell will tell you that you are now in /home/repl/seasonal. If you then run ls on its own, it shows you the contents of /home/repl/seasonal, because that's where you are. If you want to get back to your home directory /home/repl, you can use the command cd /home/repl.
+
+~~~
+$ pwd/home/repl
+$ $ cd /home/repl/seasonal$ pwd
+/home/repl/seasonal
+$ ls
+autumn.csv  spring.csv  summer.csv  winter.csv
+~~~
+
+
+
